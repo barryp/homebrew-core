@@ -33,6 +33,7 @@ class PhpAT70 < Formula
   depends_on "mcrypt"
   depends_on "openssl"
   depends_on "pcre"
+  depends_on "tidy-html5"
   depends_on "unixodbc"
   depends_on "webp"
 
@@ -142,6 +143,7 @@ class PhpAT70 < Formula
       --with-pic
       --with-png-dir=#{Formula["libpng"].opt_prefix}
       --with-pspell=#{Formula["aspell"].opt_prefix}
+      --with-tidy
       --with-unixODBC=#{Formula["unixodbc"].opt_prefix}
       --with-webp-dir=#{Formula["webp"].opt_prefix}
       --with-xmlrpc
